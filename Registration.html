@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(100deg, #be66ea, #725291);
+            color: #333;
+        }
+
+        h2 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 450px;
+            padding: 25px;
+            margin: 30px auto;
+            background: linear-gradient(135deg, #ffffff, #f3eaff);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        td {
+            padding: 9px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 9px;
+            border: 2px solid #9b59b6;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            
+        }
+
+        input[type="file"] {
+            background: #f0e6ff;
+        }
+
+        .btn {
+            width: 150px;
+            padding: 11px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(90deg, #ff6a88, #ff99ac);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #845765, #ff758c);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="registerUser(); return false;">
+        <table>
+            <tr>
+                <td>NAME:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>USN:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>SSP ID:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>MOBILE NO:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input type="password" required></td>
+            </tr>
+
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>GENDER:</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>COURSE:</td>
+                <td>
+                    <select>
+                        <option>HTML</option>
+                        <option>Python</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="Center">
+                    <input style="margin-right: 50px;" class="btn" type="submit" value="Submit">
+                    <input class="btn" type="Reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function registerUser() {
+            alert("Registration Successful!");
+        }
+    </script>
+
+</body>
+</html>
